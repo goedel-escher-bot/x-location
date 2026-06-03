@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "X Location",
+  "version": "1.0",
+  "description": "Shows the country an account is based in next to every username on X/Twitter.",
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*", "https://x.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ]
+}
